@@ -20,7 +20,6 @@ function App() {
     let leftGrams = grams - (burning * time)
     let result = 0;
 
-    e.preventDefault();
 
     if (gender === 'male') {
       result = leftGrams / (weight * 0.7)
@@ -67,7 +66,7 @@ function App() {
             <label><input type="radio" name="gender" value="female" onChange={e => setGender(e.target.value)}></input>Female</label>
         </div>
         <div>
-          <output>{alcometer.toFixed(0)}</output>
+          <output>{alcometer.toFixed(2)}</output>
 
         </div>
 
